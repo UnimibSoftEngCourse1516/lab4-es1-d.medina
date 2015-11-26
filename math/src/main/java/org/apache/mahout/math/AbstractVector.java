@@ -164,7 +164,7 @@ public abstract class AbstractVector implements Vector, LengthCachingVector {
 
   @Override
   public Vector divide(double x) {
-    if (x == 1.0) {
+    if (x == 1.0d) {
       return clone();
     }
     Vector result = createOptimizedCopy();
