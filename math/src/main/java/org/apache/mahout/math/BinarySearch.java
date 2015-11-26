@@ -42,10 +42,11 @@ public final class BinarySearch {
    */
   public static int binarySearchFromTo(byte[] array, byte value, int from, int to) {
     int mid = -1;
-    while (from <= to) {
-      mid = (from + to) >>> 1;
+    int temp = from;
+    while (temp <= to) {
+      mid = (temp + to) >>> 1;
       if (value > array[mid]) {
-        from = mid + 1;
+        temp = mid + 1;
       } else if (value == array[mid]) {
         return mid;
       } else {
