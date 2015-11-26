@@ -68,6 +68,9 @@ public class Centroid extends WeightedVector {
    * Gets the index of this centroid.  Use getIndex instead to maintain standard names.
    */
   @Deprecated
+  /**
+   * @deprecated
+   */
   public int getKey() {
     return getIndex();
   }
