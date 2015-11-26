@@ -91,7 +91,6 @@ public final class Arrays {
       }
 
       newArray = new double[newCapacity];
-      //for (int i = oldCapacity; --i >= 0; ) newArray[i] = array[i];
       System.arraycopy(array, 0, newArray, 0, oldCapacity);
     } else {
       newArray = array;
